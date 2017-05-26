@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Common", "0 Common", "{825F5444-3089-4EA4-82E6-28C8598AD340}"
 EndProject
@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Test", "5 Test", "{614313
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.Common.Models", "OpenQbit.Masterdb.Common.Models\OpenQbit.Masterdb.Common.Models.csproj", "{E981658B-80C8-486F-AA62-76D81070244D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masterdb.DataAccsess.DAL", "Masterdb.DataAccsess.DAL\Masterdb.DataAccsess.DAL.csproj", "{B03E4994-3A4E-4419-A54F-32E27AC97846}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +29,16 @@ Global
 		{E981658B-80C8-486F-AA62-76D81070244D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E981658B-80C8-486F-AA62-76D81070244D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E981658B-80C8-486F-AA62-76D81070244D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B03E4994-3A4E-4419-A54F-32E27AC97846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B03E4994-3A4E-4419-A54F-32E27AC97846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B03E4994-3A4E-4419-A54F-32E27AC97846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B03E4994-3A4E-4419-A54F-32E27AC97846}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E981658B-80C8-486F-AA62-76D81070244D} = {825F5444-3089-4EA4-82E6-28C8598AD340}
+		{B03E4994-3A4E-4419-A54F-32E27AC97846} = {93A3F394-9BB9-43C4-B806-57C4636EF7CE}
 	EndGlobalSection
 EndGlobal
