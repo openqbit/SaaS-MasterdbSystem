@@ -294,10 +294,6 @@
       <Project>{b03e4994-3a4e-4419-a54f-32e27ac97846}</Project>
       <Name>Masterdb.DataAccsess.DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OpenQbit.Masterdb.Common.Models\OpenQbit.Masterdb.Common.Models.csproj">
-      <Project>{e981658b-80c8-486f-aa62-76d81070244d}</Project>
-      <Name>OpenQbit.Masterdb.Common.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

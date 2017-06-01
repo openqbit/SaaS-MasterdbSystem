@@ -58,12 +58,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OpenQbit.Masterdb.Common.Models\OpenQbit.Masterdb.Common.Models.csproj">
-      <Project>{e981658b-80c8-486f-aa62-76d81070244d}</Project>
-      <Name>OpenQbit.Masterdb.Common.Models</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>

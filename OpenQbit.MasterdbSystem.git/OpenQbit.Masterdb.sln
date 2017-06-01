@@ -15,8 +15,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 DAL", "4 DAL", "{93A3F394
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Test", "5 Test", "{61431316-A0B1-4C8B-9071-73F53D51FD06}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.Common.Models", "OpenQbit.Masterdb.Common.Models\OpenQbit.Masterdb.Common.Models.csproj", "{E981658B-80C8-486F-AA62-76D81070244D}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masterdb.DataAccsess.DAL", "Masterdb.DataAccsess.DAL\Masterdb.DataAccsess.DAL.csproj", "{B03E4994-3A4E-4419-A54F-32E27AC97846}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masterdb.Presentation.Web", "Masterdb.Presentation.Web\Masterdb.Presentation.Web.csproj", "{65FA65B8-71CC-4DBA-BB33-EAD5BD01D04E}"
@@ -35,10 +33,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E981658B-80C8-486F-AA62-76D81070244D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E981658B-80C8-486F-AA62-76D81070244D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E981658B-80C8-486F-AA62-76D81070244D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E981658B-80C8-486F-AA62-76D81070244D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B03E4994-3A4E-4419-A54F-32E27AC97846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B03E4994-3A4E-4419-A54F-32E27AC97846}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B03E4994-3A4E-4419-A54F-32E27AC97846}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -68,7 +62,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{E981658B-80C8-486F-AA62-76D81070244D} = {825F5444-3089-4EA4-82E6-28C8598AD340}
 		{B03E4994-3A4E-4419-A54F-32E27AC97846} = {93A3F394-9BB9-43C4-B806-57C4636EF7CE}
 		{65FA65B8-71CC-4DBA-BB33-EAD5BD01D04E} = {4620BEA0-30F0-4A91-BD25-C2A9FC34D197}
 		{AD432B77-9FC4-4E3A-9619-C517DDFDBA9E} = {61431316-A0B1-4C8B-9071-73F53D51FD06}
