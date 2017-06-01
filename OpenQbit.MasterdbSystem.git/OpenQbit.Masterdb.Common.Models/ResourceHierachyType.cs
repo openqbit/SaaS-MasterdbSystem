@@ -10,6 +10,7 @@ namespace OpenQbit.Masterdb.Common.Models
     {
         public int ID { get; set; }
 
+
         public String Type { get; set; }
     }
 }
