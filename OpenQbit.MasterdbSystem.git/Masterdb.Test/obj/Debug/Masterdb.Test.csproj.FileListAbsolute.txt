@@ -5,3 +5,10 @@ E:\IJSE\WEB APPLICATIONS\Lilantha Sir\SaaS-MasterdbSystem\OpenQbit.MasterdbSyste
 E:\IJSE\WEB APPLICATIONS\Lilantha Sir\SaaS-MasterdbSystem\OpenQbit.MasterdbSystem.git\Masterdb.Test\obj\Debug\Masterdb.Test.csprojResolveAssemblyReference.cache
 E:\IJSE\WEB APPLICATIONS\Lilantha Sir\SaaS-MasterdbSystem\OpenQbit.MasterdbSystem.git\Masterdb.Test\obj\Debug\Masterdb.Test.dll
 E:\IJSE\WEB APPLICATIONS\Lilantha Sir\SaaS-MasterdbSystem\OpenQbit.MasterdbSystem.git\Masterdb.Test\obj\Debug\Masterdb.Test.pdb
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.Test\bin\Debug\Masterdb.Test.dll
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.Test\bin\Debug\Masterdb.Test.pdb
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.Test\obj\Debug\Masterdb.Test.csprojResolveAssemblyReference.cache
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.Test\obj\Debug\Masterdb.Test.dll
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.Test\obj\Debug\Masterdb.Test.pdb
