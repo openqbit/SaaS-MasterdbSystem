@@ -1,0 +1,4 @@
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.DataAccsess.DAL.Contract\bin\Debug\Masterdb.DataAccsess.DAL.Contract.dll
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.DataAccsess.DAL.Contract\bin\Debug\Masterdb.DataAccsess.DAL.Contract.pdb
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.DataAccsess.DAL.Contract\obj\Debug\Masterdb.DataAccsess.DAL.Contract.dll
+E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.DataAccsess.DAL.Contract\obj\Debug\Masterdb.DataAccsess.DAL.Contract.pdb
