@@ -1,5 +1,0 @@
-E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.BussinessService.Contracts\bin\Debug\Masterdb.BussinessService.Contracts.dll
-E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.BussinessService.Contracts\bin\Debug\Masterdb.BussinessService.Contracts.pdb
-E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.BussinessService.Contracts\obj\Debug\Masterdb.BussinessService.Contracts.csprojResolveAssemblyReference.cache
-E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.BussinessService.Contracts\obj\Debug\Masterdb.BussinessService.Contracts.dll
-E:\IJSE\WEB APPLICATIONS\Lilantha Sir\New folder\OpenQbit.MasterdbSystem.git\Masterdb.BussinessService.Contracts\obj\Debug\Masterdb.BussinessService.Contracts.pdb
