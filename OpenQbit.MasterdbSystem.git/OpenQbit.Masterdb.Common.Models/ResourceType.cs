@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace OpenQbit.Masterdb.Common.Models
 {
-    public class Class1
+   public class ResourceType
     {
+        public int ID { get; set; }
 
+        public String Type { get; set; }
     }
 }
