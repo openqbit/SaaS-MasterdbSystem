@@ -1,0 +1,35 @@
+﻿@model OpenQbit.Masterdb.Common.Models.Resorce
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Resorce</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DetailsXml)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DetailsXml)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

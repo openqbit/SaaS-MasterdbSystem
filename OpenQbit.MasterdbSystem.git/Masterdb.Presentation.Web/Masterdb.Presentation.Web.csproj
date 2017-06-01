@@ -196,8 +196,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ResorcesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -265,6 +267,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Resorces\Create.cshtml" />
+    <Content Include="Views\Resorces\Delete.cshtml" />
+    <Content Include="Views\Resorces\Details.cshtml" />
+    <Content Include="Views\Resorces\Edit.cshtml" />
+    <Content Include="Views\Resorces\Index.cshtml" />
+    <Content Include="Views\Details\Create.cshtml" />
+    <Content Include="Views\Details\Delete.cshtml" />
+    <Content Include="Views\Details\Details.cshtml" />
+    <Content Include="Views\Details\Edit.cshtml" />
+    <Content Include="Views\Details\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,6 +288,16 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Masterdb.DataAccsess.DAL\Masterdb.DataAccsess.DAL.csproj">
+      <Project>{b03e4994-3a4e-4419-a54f-32e27ac97846}</Project>
+      <Name>Masterdb.DataAccsess.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Masterdb.Common.Models\OpenQbit.Masterdb.Common.Models.csproj">
+      <Project>{e981658b-80c8-486f-aa62-76d81070244d}</Project>
+      <Name>OpenQbit.Masterdb.Common.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
