@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Practices.Unity;
+using OpenQbit.Masterdb.BusinessService.Contracts;
 
 namespace OpenQbit.Masterdb.Common.Ioc
 {
@@ -21,7 +22,8 @@ namespace OpenQbit.Masterdb.Common.Ioc
             Container.RegisterType<IRepository, Repository>();
             Container.RegisterType<ILogger, LoggerB>();
 
-            Container.RegisterType<Resorce, ResourceManger>();
+            Container.RegisterType<RResourceManger, ResourceManger>();
+            
         }
 
         public static T Resolve<T>()
