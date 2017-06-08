@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 DataAccsess", "4 DataAccs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Test", "5 Test", "{90E4BA22-D0CA-4291-9147-D8E7F6911C3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.DataAccsess.DAL", "OpenQbit.Masterdb.DataAccsess.DAL\OpenQbit.Masterdb.DataAccsess.DAL.csproj", "{019286B9-A6DB-41F7-8C02-D3CD0526EDCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +29,16 @@ Global
 		{4D299BAB-7C76-40A2-9A94-A73ED37123C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D299BAB-7C76-40A2-9A94-A73ED37123C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D299BAB-7C76-40A2-9A94-A73ED37123C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{019286B9-A6DB-41F7-8C02-D3CD0526EDCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019286B9-A6DB-41F7-8C02-D3CD0526EDCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019286B9-A6DB-41F7-8C02-D3CD0526EDCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019286B9-A6DB-41F7-8C02-D3CD0526EDCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4D299BAB-7C76-40A2-9A94-A73ED37123C5} = {D154630F-C680-402F-AD61-F0AC6CD96F09}
+		{019286B9-A6DB-41F7-8C02-D3CD0526EDCB} = {D869D9B0-1FC7-4112-9C30-AE18637A8122}
 	EndGlobalSection
 EndGlobal
