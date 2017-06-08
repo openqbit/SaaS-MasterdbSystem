@@ -51,7 +51,7 @@ namespace OpenQbit.Masterdb.Test.DAL
 
             db.Resorce.Add(newResorce);
             db.SaveChanges();
-            //using System.Linq; //using System.Data; //using System.Data.Entity;
+
             Resorce findResorce =
                 db.Resorce.Where(C => C.ID == 10).FirstOrDefault();
 
@@ -59,7 +59,7 @@ namespace OpenQbit.Masterdb.Test.DAL
 
             if (findResorce != null)
             {
-                db.Resorce.Remove(findResorce); // remove from Db
+                db.Resorce.Remove(findResorce); 
             }
 
         }
