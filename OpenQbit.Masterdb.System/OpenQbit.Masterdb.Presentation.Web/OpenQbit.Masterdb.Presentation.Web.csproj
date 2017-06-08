@@ -293,6 +293,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\Resorce\" />
     <Folder Include="Views\ResourceTypes\" />
   </ItemGroup>
   <ItemGroup>
