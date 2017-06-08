@@ -47,7 +47,7 @@ namespace OpenQbit.Masterdb.Test.DAL
             MasterDBContext db = new MasterDBContext();
             Resorce newResorce =
               new Resorce
-              { ID = 10, Type = "dd", TypeID = 1000 };
+              { ID = 10,  TypeID = 1000 };
 
             db.Resorce.Add(newResorce);
             db.SaveChanges();
