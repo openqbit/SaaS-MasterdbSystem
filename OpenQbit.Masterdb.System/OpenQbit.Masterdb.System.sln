@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Common", "0 Common", "{D1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.Common.Model", "OpenQbit.Masterdb.Common.Model\OpenQbit.Masterdb.Common.Model.csproj", "{4D299BAB-7C76-40A2-9A94-A73ED37123C5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Presentation", "1 Presentation", "{6EF57ADC-1602-400F-97DD-074E31E3D083}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
