@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OpenQbit.Masterdb.Common.Ioc
 {
-    public class Class1
+   public class UnityResolver
     {
     }
 }
