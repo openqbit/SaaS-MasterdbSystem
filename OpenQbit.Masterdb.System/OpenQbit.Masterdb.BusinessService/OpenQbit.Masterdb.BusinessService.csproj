@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,6 +51,28 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceManger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenQbit.Masterdb.BusinessService.Contracts\OpenQbit.Masterdb.BusinessService.Contracts.csproj">
+      <Project>{cee01f32-d8e6-41a1-b363-59ed914ebae1}</Project>
+      <Name>OpenQbit.Masterdb.BusinessService.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Masterdb.Common.Model\OpenQbit.Masterdb.Common.Model.csproj">
+      <Project>{4d299bab-7c76-40a2-9a94-a73ed37123c5}</Project>
+      <Name>OpenQbit.Masterdb.Common.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Masterdb.Common.Utils.Logs\OpenQbit.Masterdb.Common.Utils.Logs.csproj">
+      <Project>{dbe8e181-d740-4209-90a0-add14ea0f058}</Project>
+      <Name>OpenQbit.Masterdb.Common.Utils.Logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Masterdb.DataAccess.DAL.Contracts\OpenQbit.Masterdb.DataAccess.DAL.Contracts.csproj">
+      <Project>{94ff7817-f196-4434-a676-3311b8a02d28}</Project>
+      <Name>OpenQbit.Masterdb.DataAccess.DAL.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
