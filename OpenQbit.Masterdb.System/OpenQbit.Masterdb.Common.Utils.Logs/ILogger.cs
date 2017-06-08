@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace OpenQbit.Masterdb.Common.Utils.Logs
 {
-    public class Class1
+   public class ILogger
     {
+        bool LogError(string err);
     }
 }
