@@ -1,8 +1,11 @@
-﻿using System;
+﻿using OpenQbit.Masterdb.DataAccess.DAL.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Linq.Expressions;
+using System.Data.Entity;
 
 namespace OpenQbit.Masterdb.DataAccsess.DAL
 {
@@ -79,5 +82,15 @@ namespace OpenQbit.Masterdb.DataAccsess.DAL
                 return false;
             }
         }
+
+        //public T Find<T>(Expression<Func<T, bool>> predicate) where T : class
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public List<T> FindList<T>(Expression<Func<T, bool>> predicate) where T : class
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
