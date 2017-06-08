@@ -12,5 +12,10 @@ namespace OpenQbit.Masterdb.Common.Model
         public int ID { get; set; }
 
         public string Type { get; set; }
+
+        public static implicit operator ResourceType(int v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
