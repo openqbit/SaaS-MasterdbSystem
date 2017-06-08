@@ -3,56 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 Common", "0 Common", "{825F5444-3089-4EA4-82E6-28C8598AD340}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 Presenataion", "1 Presenataion", "{4620BEA0-30F0-4A91-BD25-C2A9FC34D197}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 Service", "2 Service", "{15EC8727-C7AF-49B8-91A6-C3D65873E87E}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 BLL", "3 BLL", "{FC0AD0E2-CEF0-41F0-A4B7-FB6C920F9851}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 DAL", "4 DAL", "{93A3F394-9BB9-43C4-B806-57C4636EF7CE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 Test", "5 Test", "{61431316-A0B1-4C8B-9071-73F53D51FD06}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masterdb.Test", "Masterdb.Test\Masterdb.Test.csproj", "{AD432B77-9FC4-4E3A-9619-C517DDFDBA9E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masterdb.BussinessService", "Masterdb.BussinessService\Masterdb.BussinessService.csproj", "{C7046C53-1F2B-4140-A610-D60F37B7626B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Masterdb.BussinessService.Contracts", "Masterdb.BussinessService.Contracts\Masterdb.BussinessService.Contracts.csproj", "{00F7E457-6FDD-4F2F-900F-668A87121D45}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.Common.Model", "OpenQbit.Masterdb.Common.Model\OpenQbit.Masterdb.Common.Model.csproj", "{3C3C2D43-6D93-47C0-8827-9772A093F03B}"
-EndProject
 Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{AD432B77-9FC4-4E3A-9619-C517DDFDBA9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AD432B77-9FC4-4E3A-9619-C517DDFDBA9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AD432B77-9FC4-4E3A-9619-C517DDFDBA9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AD432B77-9FC4-4E3A-9619-C517DDFDBA9E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7046C53-1F2B-4140-A610-D60F37B7626B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7046C53-1F2B-4140-A610-D60F37B7626B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7046C53-1F2B-4140-A610-D60F37B7626B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7046C53-1F2B-4140-A610-D60F37B7626B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{00F7E457-6FDD-4F2F-900F-668A87121D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00F7E457-6FDD-4F2F-900F-668A87121D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00F7E457-6FDD-4F2F-900F-668A87121D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00F7E457-6FDD-4F2F-900F-668A87121D45}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C3C2D43-6D93-47C0-8827-9772A093F03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C3C2D43-6D93-47C0-8827-9772A093F03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C3C2D43-6D93-47C0-8827-9772A093F03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C3C2D43-6D93-47C0-8827-9772A093F03B}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{AD432B77-9FC4-4E3A-9619-C517DDFDBA9E} = {61431316-A0B1-4C8B-9071-73F53D51FD06}
-		{C7046C53-1F2B-4140-A610-D60F37B7626B} = {FC0AD0E2-CEF0-41F0-A4B7-FB6C920F9851}
-		{00F7E457-6FDD-4F2F-900F-668A87121D45} = {FC0AD0E2-CEF0-41F0-A4B7-FB6C920F9851}
-		{3C3C2D43-6D93-47C0-8827-9772A093F03B} = {825F5444-3089-4EA4-82E6-28C8598AD340}
 	EndGlobalSection
 EndGlobal
