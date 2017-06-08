@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQbit.Masterdb.Common.Model;
+using Microsoft.Practices.Unity;
 
 namespace OpenQbit.Masterdb.BusinessService
 {
@@ -17,7 +18,7 @@ namespace OpenQbit.Masterdb.BusinessService
         private ILogger _log;
 
         [InjectionConstructor]    // Constructore  inject
-        public InvoiceManger(IRepository repository, ILogger log)
+        public ResourceManger(IRepository repository, ILogger log)
         {
             this._repository = repository;
             this._log = log;
@@ -45,16 +46,16 @@ namespace OpenQbit.Masterdb.BusinessService
             _repository = repository;
         }
 
-        public bool RecoredInvoice(Invoice invoice) //Add Invoice
+        public bool RecoredInvoice(Resorce resorce) //Add Invoice
         {
             _log.LogError("");
 
-            return _repository.Create<Invoice>(invoice);
+            return _repository.Create<Resorce>(resorce);
 
             //throw new NotImplementedException();
         }
 
-        public bool RecoredInvoice(Resorce resource)
+        public bool RecoredResorce(Resorce resource)
         {
             throw new NotImplementedException();
         }
