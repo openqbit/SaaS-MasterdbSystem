@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.Common.Io
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.DataAccess.DAL.Contracts", "OpenQbit.Masterdb.DataAccess.DAL.Contracts\OpenQbit.Masterdb.DataAccess.DAL.Contracts.csproj", "{94FF7817-F196-4434-A676-3311B8A02D28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.BusinessService", "OpenQbit.Masterdb.BusinessService\OpenQbit.Masterdb.BusinessService.csproj", "{A3E1BB51-746D-4179-B08F-A87F97288CBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.BusinessService.Contracts", "OpenQbit.Masterdb.BusinessService.Contracts\OpenQbit.Masterdb.BusinessService.Contracts.csproj", "{CEE01F32-D8E6-41A1-B363-59ED914EBAE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,14 @@ Global
 		{94FF7817-F196-4434-A676-3311B8A02D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94FF7817-F196-4434-A676-3311B8A02D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94FF7817-F196-4434-A676-3311B8A02D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E1BB51-746D-4179-B08F-A87F97288CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E1BB51-746D-4179-B08F-A87F97288CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E1BB51-746D-4179-B08F-A87F97288CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E1BB51-746D-4179-B08F-A87F97288CBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE01F32-D8E6-41A1-B363-59ED914EBAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE01F32-D8E6-41A1-B363-59ED914EBAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE01F32-D8E6-41A1-B363-59ED914EBAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE01F32-D8E6-41A1-B363-59ED914EBAE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,5 +83,7 @@ Global
 		{DBE8E181-D740-4209-90A0-ADD14EA0F058} = {F76FE2B1-E55E-44CC-BA77-9542E3A63B26}
 		{82975AF3-BF9B-43DE-98A7-86735758A7EC} = {D154630F-C680-402F-AD61-F0AC6CD96F09}
 		{94FF7817-F196-4434-A676-3311B8A02D28} = {D869D9B0-1FC7-4112-9C30-AE18637A8122}
+		{A3E1BB51-746D-4179-B08F-A87F97288CBD} = {B3758EA8-F3E3-4446-BD5A-BD2371AB813B}
+		{CEE01F32-D8E6-41A1-B363-59ED914EBAE1} = {B3758EA8-F3E3-4446-BD5A-BD2371AB813B}
 	EndGlobalSection
 EndGlobal
