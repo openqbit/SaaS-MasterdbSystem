@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.BusinessS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.Service.WebAPI", "OpenQbit.Masterdb.Service.WebAPI\OpenQbit.Masterdb.Service.WebAPI.csproj", "{88098BB9-ED04-48C2-8449-6737BD9572B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQbit.Masterdb.Test.BusinessService", "OpenQbit.Masterdb.Test.BusinessService\OpenQbit.Masterdb.Test.BusinessService.csproj", "{4AEE6673-3DE6-4499-A394-D15ED20488F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{88098BB9-ED04-48C2-8449-6737BD9572B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88098BB9-ED04-48C2-8449-6737BD9572B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88098BB9-ED04-48C2-8449-6737BD9572B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AEE6673-3DE6-4499-A394-D15ED20488F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AEE6673-3DE6-4499-A394-D15ED20488F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AEE6673-3DE6-4499-A394-D15ED20488F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AEE6673-3DE6-4499-A394-D15ED20488F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{A3E1BB51-746D-4179-B08F-A87F97288CBD} = {B3758EA8-F3E3-4446-BD5A-BD2371AB813B}
 		{CEE01F32-D8E6-41A1-B363-59ED914EBAE1} = {B3758EA8-F3E3-4446-BD5A-BD2371AB813B}
 		{88098BB9-ED04-48C2-8449-6737BD9572B4} = {52E378AC-C095-43DE-BF42-22B9D19A5D2E}
+		{4AEE6673-3DE6-4499-A394-D15ED20488F5} = {90E4BA22-D0CA-4291-9147-D8E7F6911C3A}
 	EndGlobalSection
 EndGlobal
