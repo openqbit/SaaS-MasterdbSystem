@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,7 +9,7 @@ namespace OpenQbit.Masterdb.Common.Ioc
 {
    public class UnityResolver
     {
-        private static readonly IUnityContainer Container = new UnityContainer();
+        private static readonly IUnityContainer Container = new EntityContainer();
 
         public static void Register()
         {
