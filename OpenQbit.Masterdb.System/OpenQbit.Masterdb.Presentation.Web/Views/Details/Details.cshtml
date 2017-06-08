@@ -1,0 +1,43 @@
+﻿@model OpenQbit.Masterdb.Common.Model.Details
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.R.DetailsXml)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R.DetailsXml)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ResourceHierachy.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ResourceHierachy.ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
