@@ -67,6 +67,10 @@
       <Project>{4d299bab-7c76-40a2-9a94-a73ed37123c5}</Project>
       <Name>OpenQbit.Masterdb.Common.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\OpenQbit.Masterdb.DataAccess.DAL.Contracts\OpenQbit.Masterdb.DataAccess.DAL.Contracts.csproj">
+      <Project>{94ff7817-f196-4434-a676-3311b8a02d28}</Project>
+      <Name>OpenQbit.Masterdb.DataAccess.DAL.Contracts</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201706081243128_DbInit.resx">
