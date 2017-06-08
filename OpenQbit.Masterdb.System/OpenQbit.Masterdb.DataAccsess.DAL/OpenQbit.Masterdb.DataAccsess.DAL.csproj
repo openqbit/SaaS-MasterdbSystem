@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MasterDBContext.cs" />
+    <Compile Include="Migrations\201706081243128_DbInit.cs" />
+    <Compile Include="Migrations\201706081243128_DbInit.Designer.cs">
+      <DependentUpon>201706081243128_DbInit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +66,11 @@
       <Project>{4d299bab-7c76-40a2-9a94-a73ed37123c5}</Project>
       <Name>OpenQbit.Masterdb.Common.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706081243128_DbInit.resx">
+      <DependentUpon>201706081243128_DbInit.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
