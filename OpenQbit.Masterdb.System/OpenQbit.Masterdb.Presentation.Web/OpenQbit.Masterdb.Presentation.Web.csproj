@@ -200,6 +200,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ResorcesController.cs" />
+    <Compile Include="Controllers\ResourceHierachiesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -277,6 +278,11 @@
     <Content Include="Views\Resorces\Details.cshtml" />
     <Content Include="Views\Resorces\Edit.cshtml" />
     <Content Include="Views\Resorces\Index.cshtml" />
+    <Content Include="Views\ResourceHierachies\Create.cshtml" />
+    <Content Include="Views\ResourceHierachies\Delete.cshtml" />
+    <Content Include="Views\ResourceHierachies\Details.cshtml" />
+    <Content Include="Views\ResourceHierachies\Edit.cshtml" />
+    <Content Include="Views\ResourceHierachies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
