@@ -10,7 +10,27 @@ namespace OpenQbit.Masterdb.Test.BusinessService
     [TestClass]
     public class ContractsTest
     {
-        
+        public ContractsTest()
+        {
+
+        }
+        private TestContext testContextInstance;
+
+        public TestContext TestContext
+        {
+            get
+            {
+                return testContextInstance;
+            }
+            set
+            {
+                testContextInstance = value;
+            }
+        }
+
+       
+
+        }
 
     }
 }
