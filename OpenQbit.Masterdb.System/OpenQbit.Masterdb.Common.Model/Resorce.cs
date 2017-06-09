@@ -11,6 +11,7 @@ namespace OpenQbit.Masterdb.Common.Model
      public class Resorce
     {
         public int ID { get; set; }
+        //get the resource id key
         public int ResourceTypeID { get; set; }
 
         public virtual ResourceType Type { get; set; }
