@@ -196,11 +196,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\DetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ResorcesController.cs" />
     <Compile Include="Controllers\ResourceHierachiesController.cs" />
+    <Compile Include="Controllers\ResourceHierachyDetailsController.cs" />
     <Compile Include="Controllers\ResourceHierachyTypesController.cs" />
     <Compile Include="Controllers\ResourceTypesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -271,11 +271,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Details\Create.cshtml" />
-    <Content Include="Views\Details\Delete.cshtml" />
-    <Content Include="Views\Details\Details.cshtml" />
-    <Content Include="Views\Details\Edit.cshtml" />
-    <Content Include="Views\Details\Index.cshtml" />
     <Content Include="Views\Resorces\Create.cshtml" />
     <Content Include="Views\Resorces\Delete.cshtml" />
     <Content Include="Views\Resorces\Details.cshtml" />
@@ -286,6 +281,16 @@
     <Content Include="Views\ResourceHierachies\Details.cshtml" />
     <Content Include="Views\ResourceHierachies\Edit.cshtml" />
     <Content Include="Views\ResourceHierachies\Index.cshtml" />
+    <Content Include="Views\ResourceHierachyDetails\Create.cshtml" />
+    <Content Include="Views\ResourceHierachyDetails\Delete.cshtml" />
+    <Content Include="Views\ResourceHierachyDetails\Details.cshtml" />
+    <Content Include="Views\ResourceHierachyDetails\Edit.cshtml" />
+    <Content Include="Views\ResourceHierachyDetails\Index.cshtml" />
+    <Content Include="Views\ResourceTypes\Create.cshtml" />
+    <Content Include="Views\ResourceTypes\Delete.cshtml" />
+    <Content Include="Views\ResourceTypes\Details.cshtml" />
+    <Content Include="Views\ResourceTypes\Edit.cshtml" />
+    <Content Include="Views\ResourceTypes\Index.cshtml" />
     <Content Include="Views\ResourceHierachyTypes\Create.cshtml" />
     <Content Include="Views\ResourceHierachyTypes\Delete.cshtml" />
     <Content Include="Views\ResourceHierachyTypes\Details.cshtml" />
@@ -294,7 +299,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ResourceTypes\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

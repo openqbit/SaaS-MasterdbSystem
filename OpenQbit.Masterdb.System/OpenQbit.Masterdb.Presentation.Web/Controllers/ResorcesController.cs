@@ -40,7 +40,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
         // GET: Resorces/Create
         public ActionResult Create()
         {
-            ViewBag.TypeID = new SelectList(db.ResourceType, "ID", "Type");
+            ViewBag.ResourceTypeID = new SelectList(db.ResourceType, "ID", "Type");
             return View();
         }
 
@@ -49,7 +49,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,TypeID,DetailsXml")] Resorce resorce)
+        public ActionResult Create([Bind(Include = "ID,ResourceTypeID,DetailsXml")] Resorce resorce)
         {
             if (ModelState.IsValid)
             {
@@ -58,7 +58,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.TypeID = new SelectList(db.ResourceType, "ID", "Type", resorce.TypeID);
+            ViewBag.ResourceTypeID = new SelectList(db.ResourceType, "ID", "Type", resorce.ResourceTypeID);
             return View(resorce);
         }
 
@@ -74,7 +74,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.TypeID = new SelectList(db.ResourceType, "ID", "Type", resorce.TypeID);
+            ViewBag.ResourceTypeID = new SelectList(db.ResourceType, "ID", "Type", resorce.ResourceTypeID);
             return View(resorce);
         }
 
@@ -83,7 +83,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,TypeID,DetailsXml")] Resorce resorce)
+        public ActionResult Edit([Bind(Include = "ID,ResourceTypeID,DetailsXml")] Resorce resorce)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.TypeID = new SelectList(db.ResourceType, "ID", "Type", resorce.TypeID);
+            ViewBag.ResourceTypeID = new SelectList(db.ResourceType, "ID", "Type", resorce.ResourceTypeID);
             return View(resorce);
         }
 

@@ -40,7 +40,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
         // GET: ResourceHierachies/Create
         public ActionResult Create()
         {
-            ViewBag.TypeID = new SelectList(db.ResourceHierachyType, "ID", "Type");
+            ViewBag.ResourceHierachyTypeID = new SelectList(db.ResourceHierachyType, "ID", "Type");
             return View();
         }
 
@@ -49,7 +49,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,TypeID")] ResourceHierachy resourceHierachy)
+        public ActionResult Create([Bind(Include = "ID,ResourceHierachyTypeID")] ResourceHierachy resourceHierachy)
         {
             if (ModelState.IsValid)
             {
@@ -58,7 +58,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.TypeID = new SelectList(db.ResourceHierachyType, "ID", "Type", resourceHierachy.TypeID);
+            ViewBag.ResourceHierachyTypeID = new SelectList(db.ResourceHierachyType, "ID", "Type", resourceHierachy.ResourceHierachyTypeID);
             return View(resourceHierachy);
         }
 
@@ -74,7 +74,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.TypeID = new SelectList(db.ResourceHierachyType, "ID", "Type", resourceHierachy.TypeID);
+            ViewBag.ResourceHierachyTypeID = new SelectList(db.ResourceHierachyType, "ID", "Type", resourceHierachy.ResourceHierachyTypeID);
             return View(resourceHierachy);
         }
 
@@ -83,7 +83,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,TypeID")] ResourceHierachy resourceHierachy)
+        public ActionResult Edit([Bind(Include = "ID,ResourceHierachyTypeID")] ResourceHierachy resourceHierachy)
         {
             if (ModelState.IsValid)
             {
@@ -91,7 +91,7 @@ namespace OpenQbit.Masterdb.Presentation.Web.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.TypeID = new SelectList(db.ResourceHierachyType, "ID", "Type", resourceHierachy.TypeID);
+            ViewBag.ResourceHierachyTypeID = new SelectList(db.ResourceHierachyType, "ID", "Type", resourceHierachy.ResourceHierachyTypeID);
             return View(resourceHierachy);
         }
 

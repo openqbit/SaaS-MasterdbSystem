@@ -18,7 +18,7 @@ namespace OpenQbit.Masterdb.DataAccsess.DAL
         }
 
         public DbSet<Resorce> Resorce { get; set; }
-        public DbSet<Details> Details { get; set; }
+        public DbSet<ResourceHierachyDetails> Details { get; set; }
         public DbSet<ResourceHierachy> ResourceHierachy { get; set; }
         public DbSet<ResourceHierachyType> ResourceHierachyType { get; set; }
         public DbSet<ResourceType> ResourceType { get; set; }

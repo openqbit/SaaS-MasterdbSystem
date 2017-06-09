@@ -1,64 +1,64 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQbit.Masterdb.Common.Model;
-using OpenQbit.Masterdb.DataAccsess.DAL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using Microsoft.VisualStudio.TestTools.UnitTesting;
+//using OpenQbit.Masterdb.Common.Model;
+//using OpenQbit.Masterdb.DataAccsess.DAL;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace OpenQbit.Masterdb.Test.BusinessService
-{
-    [TestClass]
-    public class ContractTest
-    {
-        public ContractTest()
-        {
+//namespace OpenQbit.Masterdb.Test.BusinessService
+//{
+//    [TestClass]
+//    public class ContractTest
+//    {
+//        public ContractTest()
+//        {
 
-        }
-        private TestContext testContextInstance;
-        public TestContext TestContext
-        {
-            get
-            {
-                return testContextInstance;
-            }
-            set
-            {
-                testContextInstance = value;
-            }
-        }
-        [TestMethod]
-        public void TestMethod1()
-        {
-            int expected = 10;
+//        }
+//        private TestContext testContextInstance;
+//        public TestContext TestContext
+//        {
+//            get
+//            {
+//                return testContextInstance;
+//            }
+//            set
+//            {
+//                testContextInstance = value;
+//            }
+//        }
+//        [TestMethod]
+//        public void TestMethod1()
+//        {
+//            int expected = 10;
 
-            int actual = 10;
+//            int actual = 10;
 
-            Assert.AreEqual(expected, actual);
-        }
+//            Assert.AreEqual(expected, actual);
+//        }
 
-        [TestMethod]
-        public void CustomerInsertTest()
-        {
-            MasterDBContext db = new MasterDBContext();
-            Resorce newResorce =
-              new Resorce
-              { ID = 10, TypeID = 1000 };
+//        [TestMethod]
+//        public void CustomerInsertTest()
+//        {
+//            MasterDBContext db = new MasterDBContext();
+//            Resorce newResorce =
+//              new Resorce
+//              { ID = 10, TypeID = 1000 };
 
-            db.Resorce.Add(newResorce);
-            db.SaveChanges();
+//            db.Resorce.Add(newResorce);
+//            db.SaveChanges();
 
-            Resorce findResorce =
-                db.Resorce.Where(C => C.ID == 10).FirstOrDefault();
+//            Resorce findResorce =
+//                db.Resorce.Where(C => C.ID == 10).FirstOrDefault();
 
-            Assert.AreEqual(newResorce.ID, findResorce.ID);
+//            Assert.AreEqual(newResorce.ID, findResorce.ID);
 
-            if (findResorce != null)
-            {
-                db.Resorce.Remove(findResorce);
-            }
+//            if (findResorce != null)
+//            {
+//                db.Resorce.Remove(findResorce);
+//            }
 
-        }
-    }
-}
+//        }
+//    }
+//}

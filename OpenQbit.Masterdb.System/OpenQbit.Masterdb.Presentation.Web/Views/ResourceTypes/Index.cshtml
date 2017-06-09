@@ -1,4 +1,4 @@
-﻿@model IEnumerable<OpenQbit.Masterdb.Common.Model.Details>
+﻿@model IEnumerable<OpenQbit.Masterdb.Common.Model.ResourceType>
 
 @{
     ViewBag.Title = "Index";
@@ -13,13 +13,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.R.DetailsXml)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ResourceHierachy.ID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PRID)
+            @Html.DisplayNameFor(model => model.Type)
         </th>
         <th></th>
     </tr>
@@ -27,13 +21,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.R.DetailsXml)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ResourceHierachy.ID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PRID)
+            @Html.DisplayFor(modelItem => item.Type)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
