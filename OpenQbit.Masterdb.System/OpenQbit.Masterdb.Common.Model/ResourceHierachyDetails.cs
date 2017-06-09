@@ -12,19 +12,21 @@ namespace OpenQbit.Masterdb.Common.Model
     {
         //main key
         public int ID { get; set; }
-
+        //rid
         public int RID { get; set; }
-
+        //prid
         public int PRID { get; set; }
-
+        //resourceid
         public int ResourceHierachyID { get; set; }
 
-
+        //foreign key for rid
         [ForeignKey("RID")]
         public virtual Resorce ChildResorce { get; set; }
-
+        //foreign key for prid
         [ForeignKey("PRID")]
+        //return the resource key
         public virtual Resorce ParentResorce { get; set; }
+        //return the hierachy key not name
         public virtual ResourceHierachy ResourceHierachy { get; set; }
     }
 }
