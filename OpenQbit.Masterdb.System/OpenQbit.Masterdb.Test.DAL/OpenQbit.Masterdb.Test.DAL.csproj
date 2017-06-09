@@ -60,6 +60,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="DALTest.cs" />
+    <Compile Include="DetailsText-Dal.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
