@@ -26,5 +26,14 @@ namespace OpenQbit.Masterdb.Test.BusinessService
                 testContextInstance = value;
             }
         }
+        [TestMethod]
+        public void TestMethod1()
+        {
+            int expected = 10;
+
+            int actual = 10;
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
