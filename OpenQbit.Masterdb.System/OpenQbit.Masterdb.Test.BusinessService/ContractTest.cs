@@ -7,18 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenQbit.Masterdb.Test.DAL
+namespace OpenQbit.Masterdb.Test.BusinessService
 {
     [TestClass]
-    public class DALTest
+    public class ContractTest
     {
-        public DALTest()
-
+        public ContractTest()
         {
-      
+
         }
         private TestContext testContextInstance;
-
         public TestContext TestContext
         {
             get
@@ -30,7 +28,6 @@ namespace OpenQbit.Masterdb.Test.DAL
                 testContextInstance = value;
             }
         }
-
         [TestMethod]
         public void TestMethod1()
         {
@@ -41,14 +38,13 @@ namespace OpenQbit.Masterdb.Test.DAL
             Assert.AreEqual(expected, actual);
         }
 
-
         [TestMethod]
-        public void CustomerInsertTest()    
+        public void CustomerInsertTest()
         {
             MasterDBContext db = new MasterDBContext();
             Resorce newResorce =
               new Resorce
-              { ID = 10,  TypeID = 1000 };
+              { ID = 10, TypeID = 1000 };
 
             db.Resorce.Add(newResorce);
             db.SaveChanges();
@@ -60,10 +56,9 @@ namespace OpenQbit.Masterdb.Test.DAL
 
             if (findResorce != null)
             {
-                db.Resorce.Remove(findResorce); 
+                db.Resorce.Remove(findResorce);
             }
 
         }
-
     }
 }
