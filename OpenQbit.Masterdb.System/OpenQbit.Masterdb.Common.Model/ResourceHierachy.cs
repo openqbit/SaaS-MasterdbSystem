@@ -10,7 +10,7 @@ namespace OpenQbit.Masterdb.Common.Model
     {
         public int ID { get; set; }
 
-        public int TypeID { get; set; }
+        public int ResourceHierachyTypeID { get; set; }
 
         public virtual ResourceHierachyType Type { get; set; }
     }

@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Details.cs" />
+    <Compile Include="ResourceHierachyDetails.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resorce.cs" />
     <Compile Include="ResourceHierachy.cs" />

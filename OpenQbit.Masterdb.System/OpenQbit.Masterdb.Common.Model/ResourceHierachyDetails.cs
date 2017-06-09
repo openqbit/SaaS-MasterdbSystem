@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace OpenQbit.Masterdb.Common.Model
 {
-    public  class Details
+    public  class ResourceHierachyDetails
     {
         public int ID { get; set; }
 
@@ -17,7 +19,11 @@ namespace OpenQbit.Masterdb.Common.Model
         public int ResourceHierachyID { get; set; }
 
 
-        public virtual Resorce R { get; set; }
+        [ForeignKey("RID")]
+        public virtual Resorce ChildResorce { get; set; }
+
+        [ForeignKey("PRID")]
+        public virtual Resorce ParentResorce { get; set; }
         public virtual ResourceHierachy ResourceHierachy { get; set; }
     }
 }
