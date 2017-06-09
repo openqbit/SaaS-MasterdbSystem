@@ -13,6 +13,7 @@ namespace OpenQbit.Masterdb.Test.DAL
     public class DALTest
     {
         public DALTest()
+
         {
       
         }
