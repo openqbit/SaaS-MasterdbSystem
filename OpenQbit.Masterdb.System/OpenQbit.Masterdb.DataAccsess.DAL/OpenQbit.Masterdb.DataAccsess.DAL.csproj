@@ -54,6 +54,10 @@
     <Compile Include="Migrations\201706081243128_DbInit.Designer.cs">
       <DependentUpon>201706081243128_DbInit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706091019351_dbSec.cs" />
+    <Compile Include="Migrations\201706091019351_dbSec.Designer.cs">
+      <DependentUpon>201706091019351_dbSec.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
@@ -75,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201706081243128_DbInit.resx">
       <DependentUpon>201706081243128_DbInit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706091019351_dbSec.resx">
+      <DependentUpon>201706091019351_dbSec.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
