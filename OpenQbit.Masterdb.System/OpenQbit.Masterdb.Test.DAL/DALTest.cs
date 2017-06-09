@@ -42,7 +42,7 @@ namespace OpenQbit.Masterdb.Test.DAL
 
 
         [TestMethod]
-        public void CustomerInsertTest()
+        public void CustomerInsertTest()    
         {
             MasterDBContext db = new MasterDBContext();
             Resorce newResorce =

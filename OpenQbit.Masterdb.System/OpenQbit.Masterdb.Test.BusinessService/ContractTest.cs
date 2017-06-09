@@ -1,4 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using OpenQbit.Masterdb.Common.Model;
+using OpenQbit.Masterdb.DataAccsess.DAL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +36,29 @@ namespace OpenQbit.Masterdb.Test.BusinessService
             int actual = 10;
 
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void CustomerInsertTest()
+        {
+            MasterDBContext db = new MasterDBContext();
+            Resorce newResorce =
+              new Resorce
+              { ID = 10, TypeID = 1000 };
+
+            db.Resorce.Add(newResorce);
+            db.SaveChanges();
+
+            Resorce findResorce =
+                db.Resorce.Where(C => C.ID == 10).FirstOrDefault();
+
+            Assert.AreEqual(newResorce.ID, findResorce.ID);
+
+            if (findResorce != null)
+            {
+                db.Resorce.Remove(findResorce);
+            }
+
         }
     }
 }
