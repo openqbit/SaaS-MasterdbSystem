@@ -10,6 +10,7 @@ namespace OpenQbit.Masterdb.Common.Model
 {
     public  class ResourceHierachyDetails
     {
+        //main key
         public int ID { get; set; }
 
         public int RID { get; set; }
