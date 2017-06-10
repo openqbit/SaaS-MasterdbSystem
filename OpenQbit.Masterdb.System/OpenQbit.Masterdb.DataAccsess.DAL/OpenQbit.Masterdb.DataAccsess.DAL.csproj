@@ -50,13 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MasterDBContext.cs" />
-    <Compile Include="Migrations\201706081243128_DbInit.cs" />
-    <Compile Include="Migrations\201706081243128_DbInit.Designer.cs">
-      <DependentUpon>201706081243128_DbInit.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201706091019351_dbSec.cs" />
-    <Compile Include="Migrations\201706091019351_dbSec.Designer.cs">
-      <DependentUpon>201706091019351_dbSec.cs</DependentUpon>
+    <Compile Include="Migrations\201706091039302_DbInt.cs" />
+    <Compile Include="Migrations\201706091039302_DbInt.Designer.cs">
+      <DependentUpon>201706091039302_DbInt.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,11 +73,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706081243128_DbInit.resx">
-      <DependentUpon>201706081243128_DbInit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201706091019351_dbSec.resx">
-      <DependentUpon>201706091019351_dbSec.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706091039302_DbInt.resx">
+      <DependentUpon>201706091039302_DbInt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

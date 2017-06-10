@@ -21,6 +21,7 @@ namespace OpenQbit.Masterdb.Common.Model
 
         //foreign key for rid
         [ForeignKey("RID")]
+      //  [InverseProperty]
         public virtual Resorce ChildResorce { get; set; }
         //foreign key for prid
         [ForeignKey("PRID")]

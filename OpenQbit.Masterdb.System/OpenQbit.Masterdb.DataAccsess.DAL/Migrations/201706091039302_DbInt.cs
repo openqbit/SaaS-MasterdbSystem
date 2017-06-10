@@ -3,12 +3,12 @@ namespace OpenQbit.Masterdb.DataAccsess.DAL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class DbInit : DbMigration
+    public partial class DbInt : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Details",
+                "dbo.ResourceHierachyDetails",
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
@@ -18,8 +18,10 @@ namespace OpenQbit.Masterdb.DataAccsess.DAL.Migrations
                     })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Resorce", t => t.RID, cascadeDelete: true)
+                .ForeignKey("dbo.Resorce", t => t.PRID, cascadeDelete: true)
                 .ForeignKey("dbo.ResourceHierachy", t => t.ResourceHierachyID, cascadeDelete: true)
                 .Index(t => t.RID)
+                .Index(t => t.PRID)
                 .Index(t => t.ResourceHierachyID);
             
             CreateTable(
@@ -27,12 +29,12 @@ namespace OpenQbit.Masterdb.DataAccsess.DAL.Migrations
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
-                        TypeID = c.Int(nullable: false),
+                        ResourceTypeID = c.Int(nullable: false),
                         DetailsXml = c.String(storeType: "xml"),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.ResourceType", t => t.TypeID, cascadeDelete: true)
-                .Index(t => t.TypeID);
+                .ForeignKey("dbo.ResourceType", t => t.ResourceTypeID, cascadeDelete: true)
+                .Index(t => t.ResourceTypeID);
             
             CreateTable(
                 "dbo.ResourceType",
@@ -48,11 +50,11 @@ namespace OpenQbit.Masterdb.DataAccsess.DAL.Migrations
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
-                        TypeID = c.Int(nullable: false),
+                        ResourceHierachyTypeID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.ResourceHierachyType", t => t.TypeID, cascadeDelete: true)
-                .Index(t => t.TypeID);
+                .ForeignKey("dbo.ResourceHierachyType", t => t.ResourceHierachyTypeID, cascadeDelete: true)
+                .Index(t => t.ResourceHierachyTypeID);
             
             CreateTable(
                 "dbo.ResourceHierachyType",
@@ -67,19 +69,21 @@ namespace OpenQbit.Masterdb.DataAccsess.DAL.Migrations
         
         public override void Down()
         {
-            DropForeignKey("dbo.Details", "ResourceHierachyID", "dbo.ResourceHierachy");
-            DropForeignKey("dbo.ResourceHierachy", "TypeID", "dbo.ResourceHierachyType");
-            DropForeignKey("dbo.Details", "RID", "dbo.Resorce");
-            DropForeignKey("dbo.Resorce", "TypeID", "dbo.ResourceType");
-            DropIndex("dbo.ResourceHierachy", new[] { "TypeID" });
-            DropIndex("dbo.Resorce", new[] { "TypeID" });
-            DropIndex("dbo.Details", new[] { "ResourceHierachyID" });
-            DropIndex("dbo.Details", new[] { "RID" });
+            DropForeignKey("dbo.ResourceHierachyDetails", "ResourceHierachyID", "dbo.ResourceHierachy");
+            DropForeignKey("dbo.ResourceHierachy", "ResourceHierachyTypeID", "dbo.ResourceHierachyType");
+            DropForeignKey("dbo.ResourceHierachyDetails", "PRID", "dbo.Resorce");
+            DropForeignKey("dbo.ResourceHierachyDetails", "RID", "dbo.Resorce");
+            DropForeignKey("dbo.Resorce", "ResourceTypeID", "dbo.ResourceType");
+            DropIndex("dbo.ResourceHierachy", new[] { "ResourceHierachyTypeID" });
+            DropIndex("dbo.Resorce", new[] { "ResourceTypeID" });
+            DropIndex("dbo.ResourceHierachyDetails", new[] { "ResourceHierachyID" });
+            DropIndex("dbo.ResourceHierachyDetails", new[] { "PRID" });
+            DropIndex("dbo.ResourceHierachyDetails", new[] { "RID" });
             DropTable("dbo.ResourceHierachyType");
             DropTable("dbo.ResourceHierachy");
             DropTable("dbo.ResourceType");
             DropTable("dbo.Resorce");
-            DropTable("dbo.Details");
+            DropTable("dbo.ResourceHierachyDetails");
         }
     }
 }
